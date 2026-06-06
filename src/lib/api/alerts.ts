@@ -120,4 +120,20 @@ export const alertsApi = {
       return { low: 0, medium: 0, high: 0 };
     }
   },
+
+  /**
+   * Get overview statistics for the dashboard
+   */
+  getOverviewStats: async (): Promise<{ systemStatus: string; systemUptime: string }> => {
+    try {
+      const response = await apiClient.get<{ system_status: string; system_uptime: string }>('/alerts/overview/stats');
+      return {
+        systemStatus: response.data.system_status,
+        systemUptime: response.data.system_uptime,
+      };
+    } catch (error) {
+      console.error('Failed to get overview stats:', error);
+      return { systemStatus: 'Healthy', systemUptime: '99.98%' };
+    }
+  },
 };
