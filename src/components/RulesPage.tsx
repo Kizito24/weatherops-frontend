@@ -58,9 +58,9 @@ export default function RulesPage({
   const getMetricIcon = (metric: WeatherMetric, sizeClass = "h-5 w-5") => {
     switch (metric) {
       case 'temperature':
-        return <Thermometer className={`${sizeClass} text-rose-505`} />;
+        return <Thermometer className={`${sizeClass} text-rose-500`} />;
       case 'rainfall':
-        return <CloudRain className={`${sizeClass} text-blue-505`} />;
+        return <CloudRain className={`${sizeClass} text-blue-500`} />;
       case 'wind_speed':
         return <Wind className={`${sizeClass} text-teal-400`} />;
       case 'humidity':
@@ -224,7 +224,7 @@ export default function RulesPage({
 
                 {/* Rule parameters displays */}
                 <div className="px-4 py-3.5 flex items-center gap-3.5">
-                  <div className="h-9 w-9 rounded-md bg-slate-50 dark:bg-slate-850 border border-slate-150 dark:border-slate-800 flex items-center justify-center shrink-0">
+                  <div className="h-9 w-9 rounded-md bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center shrink-0">
                     {getMetricIcon(rule.metric, "h-4.5 w-4.5")}
                   </div>
                   <div className="min-w-0">
