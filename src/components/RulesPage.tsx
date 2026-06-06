@@ -321,10 +321,10 @@ export default function RulesPage({
                     }
                   }}
                   required
-                  className={`w-full text-xs font-semibold px-3 py-2 bg-slate-50 dark:bg-slate-850 hover:bg-slate-100 dark:hover:bg-slate-800 border rounded-lg text-slate-800 dark:text-slate-200 cursor-pointer transition-colors ${
+                  className={`w-full text-xs font-semibold px-3 py-2 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-750 border rounded-lg text-slate-900 dark:text-slate-100 cursor-pointer transition-colors ${
                     validationErrors.location
                       ? 'border-red-500 focus:border-red-600'
-                      : 'border-slate-150 dark:border-slate-750 focus:border-indigo-650'
+                      : 'border-slate-150 dark:border-slate-600 focus:border-indigo-650'
                   }`}
                 >
                   <option value="" disabled>--- Select Location ---</option>
@@ -352,7 +352,7 @@ export default function RulesPage({
                     id="rule-metric-select"
                     value={selectedMetric}
                     onChange={(e) => setSelectedMetric(e.target.value as WeatherMetric)}
-                    className="w-full text-xs font-semibold px-3 py-2 bg-slate-50 dark:bg-slate-850 hover:bg-slate-100 border border-slate-150 focus:outline-hidden rounded-lg text-slate-800 dark:text-slate-200 cursor-pointer"
+                    className="w-full text-xs font-semibold px-3 py-2 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-750 border border-slate-150 dark:border-slate-600 focus:outline-hidden rounded-lg text-slate-900 dark:text-slate-100 cursor-pointer transition-colors"
                   >
                     <option value="temperature">Temperature (°C)</option>
                     <option value="rainfall">Rainfall (mm)</option>
@@ -369,7 +369,7 @@ export default function RulesPage({
                     id="rule-op-select"
                     value={selectedOperator}
                     onChange={(e) => setSelectedOperator(e.target.value as RuleOperator)}
-                    className="w-full text-xs font-semibold px-3 py-2 bg-slate-50 dark:bg-slate-850 border border-slate-150 rounded-lg text-slate-800 dark:text-slate-200 cursor-pointer"
+                    className="w-full text-xs font-semibold px-3 py-2 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-750 border border-slate-150 dark:border-slate-600 rounded-lg text-slate-900 dark:text-slate-100 cursor-pointer transition-colors"
                   >
                     <option value=">">&#62; (Greater than)</option>
                     <option value="<">&#60; (Less than)</option>
@@ -398,10 +398,10 @@ export default function RulesPage({
                         setValidationErrors({ ...validationErrors, threshold: '' });
                       }
                     }}
-                    className={`w-full text-sm px-4 py-2 bg-slate-50 hover:bg-slate-100 border rounded-lg text-slate-900 dark:text-slate-100 focus:outline-hidden transition-colors ${
+                    className={`w-full text-sm px-4 py-2 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-750 border rounded-lg text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-hidden transition-colors ${
                       validationErrors.threshold
                         ? 'border-red-500 focus:border-red-600'
-                        : 'border-slate-150 focus:border-indigo-650'
+                        : 'border-slate-150 dark:border-slate-600 focus:border-indigo-650'
                     }`}
                   />
                   <div className="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-xs font-mono font-bold text-slate-400">
