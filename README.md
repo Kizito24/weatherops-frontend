@@ -4,7 +4,7 @@
 
 WeatherOps is an intelligent, automated weather monitoring platform that continuously watches weather conditions across your locations and alerts your team when action is needed. Built for businesses that depend on weather intelligence to make critical decisions.
 
-**Live Demo:** https://weatherops-frontend.vercel.app
+**Live Demo:** https://weatherops-ai.vercel.app
 
 ---
 
@@ -465,7 +465,7 @@ Key state patterns:
 
 Environment variables needed on Vercel:
 ```
-VITE_API_BASE_URL=https://your-backend-api.com/api/v1
+VITE_API_BASE_URL=https://weatherops-backend-xm5z.onrender.com/api/v1
 ```
 
 ### Other Platforms
@@ -484,7 +484,7 @@ npm run build
 
 - **[USE_CASES.md](USE_CASES.md)** - Real-world scenarios and ROI
 - **[Backend README](https://github.com/Kizito24/weatherops-backend)** - API documentation
-- **[API Docs](https://your-api.onrender.com/docs)** - Interactive Swagger UI
+- **[API Docs](https://weatherops-backend-xm5z.onrender.com/docs)** - Interactive Swagger UI
 
 ---
 
@@ -551,8 +551,8 @@ MIT - See LICENSE file
 
 ### Live
 - 🌐 **Frontend:** https://weatherops-frontend.vercel.app
-- 🔌 **Backend API:** https://weatherops-backend-[id].onrender.com
-- 📖 **API Docs:** https://weatherops-backend-[id].onrender.com/docs
+- 🔌 **Backend API:** https://weatherops-backend-xm5z.onrender.com 
+- 📖 **API Docs:** https://weatherops-backend-xm5z.onrender.com/docs
 
 ### Repositories
 - 📦 **Frontend:** https://github.com/Kizito24/weatherops-frontend
@@ -565,14 +565,14 @@ MIT - See LICENSE file
 - 📖 **Tailwind CSS:** https://tailwindcss.com
 
 ### Contact
-- 💌 **Email:** donate.mydonation@gmail.com
+- 💌 **Email:** kizitochiazor@gmail.com
 - 🐙 **GitHub:** [@Kizito24](https://github.com/Kizito24)
 
 ---
 
 ## 🎉 Get Started Today
 
-1. **Visit:** https://weatherops-frontend.vercel.app
+1. **Visit:** https://weatherops-ai.vercel.app
 2. **Register:** Create your account
 3. **Add Location:** Set first monitoring location
 4. **Create Rule:** Define alert condition
