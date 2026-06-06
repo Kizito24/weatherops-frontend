@@ -169,7 +169,7 @@ export default function LocationsPage({
         <div className="bg-white dark:bg-slate-900 border border-slate-150 dark:border-slate-800 rounded-xl overflow-hidden shadow-xs">
           <div className="overflow-x-auto">
             <table className="w-full text-left text-xs whitespace-nowrap">
-              <thead className="bg-[#F9FAFB] dark:bg-slate-850/60 text-slate-500 dark:text-slate-400 uppercase text-[10px] font-mono tracking-wider border-b border-slate-100 dark:border-slate-803">
+              <thead className="bg-[#F9FAFB] dark:bg-slate-800 text-slate-500 dark:text-slate-300 uppercase text-[10px] font-mono tracking-wider border-b border-slate-100 dark:border-slate-700">
                 <tr>
                   <th className="px-5 py-3 font-semibold">Provision Name</th>
                   <th className="px-5 py-3 font-semibold">Latitude</th>

@@ -262,7 +262,7 @@ export default function OverviewPage({
                 </div>
               ) : (
                 <table className="w-full text-left text-xs whitespace-nowrap">
-                  <thead className="bg-[#F9FAFB] dark:bg-slate-850/60 text-slate-500 dark:text-slate-400 font-mono tracking-wider text-[10px] uppercase sticky top-0 border-b border-slate-100 dark:border-slate-803">
+                  <thead className="bg-[#F9FAFB] dark:bg-slate-800 text-slate-500 dark:text-slate-300 font-mono tracking-wider text-[10px] uppercase sticky top-0 border-b border-slate-100 dark:border-slate-700">
                     <tr>
                       <th className="px-5 py-3 font-semibold">Location</th>
                       <th className="px-5 py-3 font-semibold">Metric</th>
