@@ -123,7 +123,7 @@ export default function SettingsPage({
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full text-xs px-3 py-1.5 bg-slate-50 dark:bg-slate-850 hover:bg-slate-100 border border-slate-150 dark:border-slate-750 focus:border-indigo-650 rounded-md text-slate-900 dark:text-slate-100 focus:outline-hidden"
+                className="w-full text-xs px-3 py-1.5 bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 border border-slate-150 dark:border-slate-700 focus:border-indigo-650 rounded-md text-slate-900 dark:text-slate-100 focus:outline-hidden"
               />
             </div>
 
@@ -137,7 +137,7 @@ export default function SettingsPage({
                 required
                 value={role}
                 onChange={(e) => setRole(e.target.value)}
-                className="w-full text-xs px-3 py-1.5 bg-slate-50 dark:bg-slate-850 hover:bg-slate-100 border border-slate-150 dark:border-slate-750 focus:border-indigo-650 rounded-md text-slate-900 dark:text-slate-100 focus:outline-hidden"
+                className="w-full text-xs px-3 py-1.5 bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 border border-slate-150 dark:border-slate-700 focus:border-indigo-650 rounded-md text-slate-900 dark:text-slate-100 focus:outline-hidden"
               />
             </div>
 
@@ -155,7 +155,7 @@ export default function SettingsPage({
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full pl-8 pr-3 py-1.5 text-xs bg-slate-50 dark:bg-slate-850 hover:bg-slate-100 border border-slate-150 dark:border-slate-750 focus:border-indigo-650 rounded-md text-slate-900 dark:text-slate-100 focus:outline-hidden"
+                  className="w-full pl-8 pr-3 py-1.5 text-xs bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 border border-slate-150 dark:border-slate-700 focus:border-indigo-650 rounded-md text-slate-900 dark:text-slate-100 focus:outline-hidden"
                 />
               </div>
             </div>
@@ -273,7 +273,7 @@ export default function SettingsPage({
                   type={showKey ? 'text' : 'password'}
                   readOnly
                   value={apiKey}
-                  className="w-full pl-3 pr-8 py-1.5 bg-slate-50 dark:bg-slate-850 border border-slate-150 dark:border-slate-750 rounded-md text-xs font-mono font-bold text-slate-800 dark:text-slate-200 focus:outline-hidden select-all"
+                  className="w-full pl-3 pr-8 py-1.5 bg-slate-50 dark:bg-slate-800 border border-slate-150 dark:border-slate-700 rounded-md text-xs font-mono font-bold text-slate-800 dark:text-slate-200 focus:outline-hidden select-all"
                 />
                 <button
                   id="toggle-visibility-key"
@@ -290,7 +290,7 @@ export default function SettingsPage({
                 id="copy-api-key-btn"
                 type="button"
                 onClick={handleCopyKey}
-                className="cursor-pointer p-1.5 rounded-md border border-slate-150 dark:border-slate-750 bg-slate-50 dark:bg-slate-850 text-slate-500 hover:text-slate-850 dark:hover:text-white flex items-center justify-center transition"
+                className="cursor-pointer p-1.5 rounded-md border border-slate-150 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-500 hover:text-slate-850 dark:hover:text-white flex items-center justify-center transition"
                 title="Copy API key"
               >
                 {isCopied ? <Check className="h-3.5 w-3.5 text-emerald-500" /> : <Copy className="h-3.5 w-3.5" />}
@@ -302,14 +302,14 @@ export default function SettingsPage({
                 type="button"
                 disabled={isRegenerating}
                 onClick={handleRegenerateKey}
-                className="cursor-pointer p-1.5 rounded-md border border-slate-150 dark:border-slate-750 bg-slate-50 dark:bg-slate-850 text-slate-500 hover:text-indigo-650 flex items-center justify-center hover:border-indigo-150 transition disabled:opacity-50"
+                className="cursor-pointer p-1.5 rounded-md border border-slate-150 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-500 hover:text-indigo-650 flex items-center justify-center hover:border-indigo-150 transition disabled:opacity-50"
                 title="Regenerate keys"
               >
                 <RefreshCw className={`h-3.5 w-3.5 ${isRegenerating ? 'animate-spin' : ''}`} />
               </button>
             </div>
 
-            <div className="p-2.5 bg-slate-50 dark:bg-slate-850/40 border border-slate-150 dark:border-slate-800 text-[11px] text-slate-505 dark:text-slate-400 rounded-md flex gap-2">
+            <div className="p-2.5 bg-slate-50 dark:bg-slate-800/40 border border-slate-150 dark:border-slate-800 text-[11px] text-slate-505 dark:text-slate-400 rounded-md flex gap-2">
               <Info className="h-4 w-4 text-slate-400 shrink-0 mt-0.5" />
               <span>
                 Do not share this key in public repositories. Anyone with access to this credential can trigger system alerts and command telemetry.
