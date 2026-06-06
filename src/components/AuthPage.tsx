@@ -111,7 +111,7 @@ export default function AuthPage({
                   placeholder="e.g. Alex Mercer"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full pl-8 pr-3 py-1.5 text-xs bg-slate-50 dark:bg-slate-850 hover:bg-slate-100/70 dark:hover:bg-slate-800 border border-slate-150 dark:border-slate-755 focus:border-[#111827] dark:focus:border-indigo-600 focus:bg-white dark:focus:bg-slate-900 rounded-md text-slate-900 dark:text-slate-100 focus:outline-hidden transition-all placeholder:text-slate-400"
+                  className="w-full pl-8 pr-3 py-1.5 text-xs bg-slate-800 dark:bg-slate-800 hover:bg-slate-750 dark:hover:bg-slate-750 border border-slate-700 dark:border-slate-700 focus:border-indigo-600 dark:focus:border-indigo-600 focus:bg-slate-750 dark:focus:bg-slate-750 rounded-md text-white dark:text-white focus:outline-hidden transition-all placeholder:text-slate-400"
                 />
               </div>
             </div>
@@ -132,7 +132,7 @@ export default function AuthPage({
                 placeholder="ops@weatherops.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full pl-8 pr-3 py-1.5 text-xs bg-slate-50 dark:bg-slate-850 hover:bg-slate-100/70 dark:hover:bg-slate-800 border border-slate-150 dark:border-slate-755 focus:border-[#111827] dark:focus:border-indigo-600 focus:bg-white dark:focus:bg-slate-900 rounded-md text-slate-900 dark:text-slate-100 focus:outline-hidden transition-all placeholder:text-slate-400"
+                className="w-full pl-8 pr-3 py-1.5 text-xs bg-slate-800 dark:bg-slate-800 hover:bg-slate-750 dark:hover:bg-slate-750 border border-slate-700 dark:border-slate-700 focus:border-indigo-600 dark:focus:border-indigo-600 focus:bg-slate-750 dark:focus:bg-slate-750 rounded-md text-white dark:text-white focus:outline-hidden transition-all placeholder:text-slate-400"
               />
             </div>
           </div>
@@ -159,7 +159,7 @@ export default function AuthPage({
                 placeholder="••••••••••••"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full pl-8 pr-3 py-1.5 text-xs bg-slate-50 dark:bg-slate-850 hover:bg-slate-100/70 dark:hover:bg-slate-800 border border-slate-150 dark:border-slate-755 focus:border-[#111827] dark:focus:border-indigo-600 focus:bg-white dark:focus:bg-slate-900 rounded-md text-slate-900 dark:text-slate-100 focus:outline-hidden transition-all placeholder:text-slate-400"
+                className="w-full pl-8 pr-3 py-1.5 text-xs bg-slate-800 dark:bg-slate-800 hover:bg-slate-750 dark:hover:bg-slate-750 border border-slate-700 dark:border-slate-700 focus:border-indigo-600 dark:focus:border-indigo-600 focus:bg-slate-750 dark:focus:bg-slate-750 rounded-md text-white dark:text-white focus:outline-hidden transition-all placeholder:text-slate-400"
               />
             </div>
           </div>
