@@ -69,9 +69,9 @@ export default function AuthPage({
     >
       <div className="absolute inset-0 bg-[radial-gradient(100rem_at_top,_var(--tw-gradient-stops))] from-indigo-500/10 via-transparent to-transparent opacity-60 pointer-events-none" />
 
-      <div className="w-full max-w-md bg-white dark:bg-slate-900 border border-slate-150 dark:border-slate-800/80 rounded-xl shadow-lg p-7 relative z-10 transition-colors">
+      <div className="w-full max-w-md bg-white dark:bg-slate-900 border border-slate-150 dark:border-slate-800/80 rounded-xl shadow-lg p-6 relative z-10 transition-colors">
         {/* Header Branding */}
-        <div className="flex flex-col items-center mb-6">
+        <div className="flex flex-col items-center mb-5">
           <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-[#111827] dark:bg-slate-800 text-white shadow-xs mb-2">
             <CloudSun className="h-5 w-5" />
           </div>
@@ -94,7 +94,7 @@ export default function AuthPage({
         )}
 
         {/* Credentials Form */}
-        <form onSubmit={handleSubmit} className="space-y-3.5">
+        <form onSubmit={handleSubmit} className="space-y-3">
           {mode === 'register' && (
             <div>
               <label htmlFor="reg-name" className="block text-[10px] font-bold text-slate-500 dark:text-slate-400 mb-1 uppercase font-mono tracking-wider">
@@ -179,7 +179,7 @@ export default function AuthPage({
             id="auth-submit-btn"
             type="submit"
             disabled={isLoading}
-            className="w-full inline-flex items-center justify-center gap-2 px-4 py-2 text-xs font-bold text-white bg-[#111827] hover:bg-black active:bg-slate-950 dark:bg-slate-850 dark:hover:bg-slate-800 rounded-md shadow-xs transition-all cursor-pointer disabled:opacity-50 disabled:pointer-events-none mt-2 uppercase tracking-wider"
+            className="w-full inline-flex items-center justify-center gap-2 px-4 py-2 text-xs font-bold text-white bg-[#111827] hover:bg-black active:bg-slate-950 dark:bg-slate-850 dark:hover:bg-slate-800 rounded-md shadow-xs transition-all cursor-pointer disabled:opacity-50 disabled:pointer-events-none uppercase tracking-wider"
           >
             {isLoading ? (
               <span className="inline-block h-3.5 w-3.5 border-2 border-white/60 border-t-white rounded-full animate-spin" />
@@ -198,7 +198,7 @@ export default function AuthPage({
         </form>
 
         {/* View Toggle */}
-        <div className="mt-5 pt-3 border-t border-slate-150 dark:border-slate-800/80 text-center text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wide">
+        <div className="mt-4 pt-3 border-t border-slate-150 dark:border-slate-800/80 text-center text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wide">
           {mode === 'login' ? (
             <p>
               New to WeatherOps Platform?{' '}
